@@ -1,0 +1,287 @@
+/* GERAIS */
+HTML, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --cor-h1-h3-h5: #000;
+    --cor-h2: rgb(146, 152, 177);
+    --cor-h4-txtfooter: #fff;
+    --textos: rgb(114, 114, 114);
+    --corbackgroundprimaria: rgb(139, 179, 224);
+    --corbackgroundsecundaria: rgb(255, 255, 255);
+    --corbackgroundfooter: rgb(74, 74, 105);
+    --conrbackgrounddark: rgb(50, 50, 50);
+}
+.hidden {
+    display: none;
+}
+.coluna-esquerda {
+    flex-basis: 48%;
+    margin-bottom: 0px;
+}
+.sub{
+    text-align: center;
+}
+.Perfil_profissional, .espec, .exp, .coluna-direita{
+    border-bottom: 2px solid rgb(196 194 194 / 39%);
+    padding: 15px;
+    margin: 10px;
+}
+.foto-box {
+    text-align: -webkit-center;
+}
+.Redes {
+    text-align: center;
+}
+.facebook, .linkedin, .instagram, .github {
+    margin: 0 15px 25px 15px;
+    width: 74px;
+    text-align: center;
+    display: inline-block;}
+a{
+    color: white;
+}
+h1{
+    color: var(--cor-h1-h3-h5);
+}
+h3{
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--cor-h1-h3-h5);
+}
+h4{
+    margin-top: 0.75rem;
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--cor-h4-txtfooter);
+}
+h5{
+    font-size: 1rem;
+    color: var(--cor-h1-h3-h5);
+}
+li, p{
+    color: var(--textos);
+}
+/* BODY */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+strong{
+    color: var(--cor-h1-h3-h5);
+}
+
+/* HEADER */
+
+header{
+    background-color: var(--corbackgroundprimaria);
+    padding: 30px 30px 0 30px;
+    font-family:'Roboto', sans-serif;
+    flex-basis: 48%;    
+}
+header .container{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+header figure {
+    display: flex;
+}
+header figure.foto{
+    width: 100%;
+    display: flexbox;
+    margin: 0;
+}
+header figure.foto img{
+    max-width: 100%;
+}
+header div.linha div{
+    flex-basis: 30%;
+}
+header h1{
+    margin-top: 10px;
+    text-align: center;
+}
+header h2{
+    font-size: 1.25rem;
+    color: var(--cor-h2);
+    margin-left: 10px;
+}
+header div.contatos1 h3{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+header div.contatos1 nav ul li{
+    margin: 10px;
+}
+header div.contatos1 nav ul li a{
+    color: var(--cor-h1-h3-h5);
+}
+header div.contatos1 nav ul p{
+    margin: 10px;
+}
+section {
+    width: 100%;
+    display: flexbox;
+    text-align: center;
+}
+
+/* PAGINA INICIAL */
+
+main div.container {
+    border: 48%;
+}
+main div.Perfil_profissional ul{
+    color: rgb(114, 114, 114);
+}
+main div.espec h3{
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--corbackgroundfooter);
+    color:var(--cor-h4-txtfooter);
+}
+footer div.contatos2 {
+    padding: 5px;
+}
+footer div.contatos2 nav{
+    border-bottom: 2px solid rgb(255 255 255 / 14%);
+    font-size: 0.9rem;
+}
+footer div.contatos2 nav ul{
+    padding: 5px;
+}
+footer div.contatos2 nav ul a{
+    color:var(--cor-h4-txtfooter);
+}
+footer div.redes_sociais h3{
+    text-align: center;
+}
+
+/* EXTRAS */
+
+input{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+label{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 45px;
+    height: 30px;
+    display: block;
+    background-color: var(--cor-h1-h3-h5);
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid var(--corbackgroundprimaria);
+}
+label span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color:var(--corbackgroundprimaria);
+    border-radius: 100%;
+    transform: translateX(4px);
+    margin-top: 4px;
+    border: 1px solid rgb(0, 0, 0);
+    transition: all ease .5s;
+}
+
+.ativar-dark:checked ~ .dark-mode{
+    --corbackgroundprimaria: rgb(0, 0, 0);
+    --corbackgroundfooter: rgb(0, 0, 0);
+    --cor-h1-h3-h5: rgb(255, 255, 255);
+    --cor-h2: rgb(146, 152, 177);
+    --cor-h4-txtfooter: rgb(255, 255, 255);
+    --textos: rgb(255, 255, 255);
+}
+.ativar-dark:checked ~ .dark-mode header{
+    background-color: var(--corbackgroundprimaria);
+}
+.ativar-dark:checked ~ .dark-mode header .container{
+    background-color: var(--conrbackgrounddark);
+}
+.ativar-dark:checked ~ .dark-mode .container{
+    background-color: var(--conrbackgrounddark);
+}
+
+.ativar-dark:checked ~ .dark-mode main{
+    background-color: var(--corbackgroundfooter);
+}
+.ativar-dark:checked ~ .dark-mode label span{
+    transform: translateX(17px);
+    transition: all ease .5s;
+}
+
+/* @MEDIA */
+
+@media only screen and (min-width: 768px){
+    .linha {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 25px;
+    }
+    header{
+        padding-top: 30px;
+    }
+    
+    header h1{
+        font-size: 2rem;
+        text-align: initial;
+    }
+    header figure.foto img{
+        border-radius: 100%;
+    }
+    header div.linha div{
+        max-width: 250px;
+    }
+    header div.contatos1 nav ul{
+        width: 500px;
+    }    
+    section{
+        flex-basis: 65%;
+        text-align: left;
+    }
+    footer div.redes_sociais nav{
+    display: flex;
+    justify-content: center;
+    }
+    footer div.contatos2 nav h3{
+        align-items: flex-start;
+    }
+    footer div.redes_sociais nav ul img{
+        margin: 20px 0 40px 20px;
+    }
+    header figure.foto{
+        max-width: 250px;
+    }
+    .Perfil_profissional, .espec, .exp, .coluna-direita{
+        border: 2px solid rgb(196 194 194 / 39%);
+    }
+    .facebook, .linkedin, .instagram, .github {
+        margin: 0 20px 15px 15px;
+        width: 40px;
+    }
+    footer div.redes_sociais h3 {
+        padding-top: 20px;
+    }
+    label{
+        top: 30px;
+        right: 30px;    
+    }
+}
