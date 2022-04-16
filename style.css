@@ -1,26 +1,31 @@
 /* GERAIS */
-HTML, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main {
+html {
+    scroll-behavior: smooth;
+}
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    transition: all ease .5s;
+
 }
 :root{
     --cor-h1-h3-h5: #000;
-    --cor-h2: rgb(146, 152, 177);
+    --cor-h2: #5F5AAD;
     --cor-h4-txtfooter: #fff;
     --textos: rgb(114, 114, 114);
-    --corbackgroundprimaria: rgb(139, 179, 224);
-    --corbackgroundsecundaria: rgb(255, 255, 255);
-    --corbackgroundfooter: rgb(74, 74, 105);
+    --corbackgroundprimaria: #8BB3E0;
+    --corbackgroundsecundaria: #e4d6c786;
+    --corbackgroundfooter: #5F5AAD;
     --conrbackgrounddark: rgb(50, 50, 50);
 }
 .hidden {
     display: none;
 }
 .coluna-esquerda {
-    flex-basis: 48%;
+    flex-basis: 42.73%;
     margin-bottom: 0px;
 }
 .sub{
@@ -30,6 +35,7 @@ HTML, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     border-bottom: 2px solid rgb(196 194 194 / 39%);
     padding: 15px;
     margin: 10px;
+    background-color: var(--corbackgroundsecundaria);
 }
 .foto-box {
     text-align: -webkit-center;
@@ -205,16 +211,23 @@ label span{
 }
 .ativar-dark:checked ~ .dark-mode header{
     background-color: var(--corbackgroundprimaria);
+    transition: all ease .5s;
 }
 .ativar-dark:checked ~ .dark-mode header .container{
     background-color: var(--conrbackgrounddark);
+    transition: all ease .5s;
+
 }
 .ativar-dark:checked ~ .dark-mode .container{
     background-color: var(--conrbackgrounddark);
+    transition: all ease .5s;
+
 }
 
 .ativar-dark:checked ~ .dark-mode main{
     background-color: var(--corbackgroundfooter);
+    transition: all ease .5s;
+
 }
 .ativar-dark:checked ~ .dark-mode label span{
     transform: translateX(17px);

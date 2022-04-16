@@ -1,0 +1,8 @@
+.animation-link:hover{
+    color: #8DA3F7;
+    transition: ease .5s;
+    font-weight: bold;
+}
+.foot-animation:hover{
+    text-shadow: 1px 1px 2px black;
+}
